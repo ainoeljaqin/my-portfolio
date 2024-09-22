@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import Header from "../components/Header";
 import ServiceCard from "../components/ServiceCard";
 import Socials from "../components/Socials";
@@ -10,11 +10,33 @@ import Head from "next/head";
 import Button from "../components/Button";
 import Link from "next/link";
 import Cursor from "../components/Cursor";
+import PasswordConfirmDialog from "../components/PasswordConfirmation";
+
 
 // Local Data
 import data from "../data/portfolio.json";
 
 export default function Home() {
+
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
+
+  const showDialog = () => {
+    setIsDialogOpen(true);
+  };
+
+  const handleConfirm = (password) => {
+    if (password === 'password') { // Ganti dengan logika password yang sesuai
+      window.location.href = '/edit';
+    } else {
+      alert('Password salah!');
+    }
+    setIsDialogOpen(false);
+  };
+
+  const handleCancel = () => {
+    setIsDialogOpen(false);
+  };
+
   // Ref
   const workRef = useRef();
   const aboutRef = useRef();
@@ -123,12 +145,17 @@ export default function Home() {
         </div>
         {/* This button should not go into production */}
         {process.env.NODE_ENV === "development" && (
-          <div className="fixed bottom-5 right-5">
-            <Link href="/edit">
-              <Button type="primary">Edit Data</Button>
-            </Link>
-          </div>
-        )}
+        <div className="fixed bottom-5 right-5">
+          <button onClick={showDialog} className="px-4 py-2 bg-blue-500 text-white rounded-md">
+            Edit Data
+          </button>
+        </div>
+      )}
+      <PasswordConfirmDialog
+        isOpen={isDialogOpen}
+        onConfirm={handleConfirm}
+        onClose={handleCancel}
+      />
         <div className="mt-10 laptop:mt-40 p-2 laptop:p-0" ref={aboutRef}>
           <h1 className="tablet:m-10 text-2xl text-bold">About.</h1>
           <p className="tablet:m-10 mt-2 text-xl laptop:text-3xl w-full laptop:w-3/5">
