@@ -4,22 +4,91 @@ A modern, responsive portfolio website built with React and Tailwind CSS, featur
 
 ## 🌟 Features
 
-- **Modern Dark Theme**: Professional dark monochrome design with teal accent colors
+- **Modern Dark Theme**: Professional dark monochrome design with teal accent colors (#00C896)
 - **Responsive Design**: Optimized for desktop, tablet, and mobile devices
 - **Interactive Animations**: Smooth hover effects, typewriter text, and matrix background effects
-- **Project Showcase**: Categorized portfolio with filtering capabilities
+- **Real CV Integration**: Downloadable PDF resume with authentic project data
+- **Project Showcase**: Real projects including Kediri UMKM E-Commerce, Education websites
 - **Contact Form**: Integrated with Formspree for static form submissions
-- **CV Download**: Static PDF download functionality
 - **GitHub Pages Ready**: Fully static website optimized for GitHub Pages deployment
 
 ## 📱 Pages
 
 - **Home**: Hero section with animated typewriter effect and matrix background
-- **Projects**: Portfolio showcase with category filtering
+- **Projects**: Portfolio showcase with category filtering (Web Development, Software Development)
 - **About**: Personal information, skills, and experience timeline
-- **Blog**: Articles and publications (expandable)
-- **Profile**: Professional overview with CV download
+- **Blog**: Tech articles and professional insights
+- **Profile**: Professional overview with real CV download (186KB PDF)
 - **Contact**: Contact form and social links
+
+## 🚀 Quick Start - Local Development
+
+### Prerequisites
+- Node.js (v16 or higher) - [Download here](https://nodejs.org/)
+- Yarn package manager - [Installation guide](https://yarnpkg.com/getting-started/install)
+- Git - [Download here](https://git-scm.com/)
+
+### 1. Clone the Repository
+```bash
+# Clone this repository
+git clone https://github.com/yourusername/muhammad-ainul-yaqin-portfolio.git
+
+# Navigate to the project directory
+cd muhammad-ainul-yaqin-portfolio
+```
+
+### 2. Install Dependencies
+```bash
+# Install all required packages
+yarn install
+```
+
+### 3. Start Development Server
+```bash
+# Start the development server
+yarn start
+
+# The website will open automatically at http://localhost:3000
+```
+
+### 4. Build for Production (Optional)
+```bash
+# Create optimized production build
+yarn build
+
+# Test the production build locally
+npx serve -s build
+```
+
+## 📂 Project Structure
+```
+frontend/
+├── public/
+│   ├── assets/              # Static assets (CV, images)
+│   │   └── Muhammad-Ainul-Yaqin-resume.pdf
+│   └── index.html
+├── src/
+│   ├── components/          # Reusable components
+│   │   ├── Header.jsx       # Navigation header
+│   │   └── Footer.jsx       # Site footer
+│   ├── pages/               # Page components
+│   │   ├── Home.jsx         # Landing page with matrix effect
+│   │   ├── Projects.jsx     # Project showcase
+│   │   ├── About.jsx        # About page
+│   │   ├── Blog.jsx         # Blog posts
+│   │   ├── Profile.jsx      # Professional profile
+│   │   └── Contact.jsx      # Contact form
+│   ├── data/
+│   │   └── mockData.js      # All website content and data
+│   ├── App.js               # Main application component
+│   ├── index.css            # Global styles and Tailwind
+│   └── index.js             # Application entry point
+├── .github/
+│   └── workflows/
+│       └── deploy.yml       # GitHub Actions deployment
+├── package.json             # Dependencies and scripts
+└── README.md                # This file
+```
 
 ## 🚀 Deployment to GitHub Pages
 
