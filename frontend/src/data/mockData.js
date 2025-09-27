@@ -133,9 +133,11 @@ export const experience = [
 
 export const education = {
   degree: "Bachelor of Informatics Engineering",
-  institution: "University Name",
-  expectedGraduation: "2025",
-  relevantCourses: ["AI", "Software Engineering", "Game Development", "Backend Systems"]
+  institution: "Universitas Nusantara PGRI Kediri",
+  expectedGraduation: "September 2025",
+  gpa: "3.88/4.00",
+  location: "Kediri, Indonesia",
+  relevantCourses: ["Web Programming", "Software Engineering", "Cybersecurity", "Artificial Intelligence", "Database Systems", "Algorithms"]
 };
 
 export const categories = [
