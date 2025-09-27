@@ -2,7 +2,7 @@
   "name": "muhammad-ainul-yaqin-portfolio",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://yourusername.github.io/your-repo-name",
+  "homepage": "https://ainoeljaqin.github.io/my-portfolio",
   "dependencies": {
     "@hookform/resolvers": "^5.0.1",
     "@radix-ui/react-accordion": "^1.2.8",
