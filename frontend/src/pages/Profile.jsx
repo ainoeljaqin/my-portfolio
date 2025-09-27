@@ -83,7 +83,7 @@ const Profile = () => {
           {/* Note about PDF */}
           <div className="bg-teal-accent/10 border border-teal-accent/30 rounded-lg p-4 max-w-2xl mx-auto">
             <p className="text-teal-accent font-mono text-sm">
-              📝 <strong>Note:</strong> Add your CV file to /public/assets/CV-Muhammad-Ainul-Yaqin.pdf for the download to work.
+              ✅ <strong>CV Ready:</strong> Your actual resume is now integrated and ready for download!
             </p>
           </div>
         </div>
