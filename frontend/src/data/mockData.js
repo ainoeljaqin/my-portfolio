@@ -83,27 +83,27 @@ export const projects = [
 export const blogPosts = [
   {
     id: 1,
-    title: "Implementing Adaptive Boss AI with Deep Reinforcement Learning in Godot",
-    summary: "A deep dive into creating intelligent game enemies that adapt to player behavior using reinforcement learning algorithms integrated with Godot Engine.",
-    tags: ["Game Development", "AI", "Godot", "Deep Learning"],
+    title: "Building Scalable Web Applications: Lessons from Real-World Projects",
+    summary: "Insights gained from developing international projects at Adisatya IT Consultant, covering both frontend and backend architecture decisions.",
+    tags: ["Web Development", "FullStack", "Scalability", "Best Practices"],
     date: "2024-12-15",
-    slug: "adaptive-boss-ai-drl-godot"
+    slug: "building-scalable-web-applications"
   },
   {
     id: 2,
-    title: "Why Django Middleware Is Perfect for Enforcing MFA Policies",
-    summary: "Exploring how Django's middleware system provides an elegant solution for implementing multi-factor authentication requirements across web applications.",
-    tags: ["Django", "Security", "Backend", "Python"],
+    title: "Integrating AI and Cybersecurity in Modern Web Development",
+    summary: "Exploring the intersection of artificial intelligence and cybersecurity practices in contemporary web application development.",
+    tags: ["AI", "Cybersecurity", "Web Security", "Python"],
     date: "2024-11-28",
-    slug: "django-middleware-mfa-policies"
+    slug: "ai-cybersecurity-web-development"
   },
   {
     id: 3,
-    title: "Weekend Notes: Hydroponics + Coding Flow 🌱💻",
-    summary: "Personal reflections on finding balance between technical work and gardening hobbies, and how both activities complement creative problem-solving.",
-    tags: ["Personal", "Work-Life Balance", "Gardening"],
+    title: "From Student to Professional: My Journey in Tech 🚀",
+    summary: "Reflecting on the transition from university projects to professional fullstack development, including experiences from internships and mentorship programs.",
+    tags: ["Career", "Student Life", "Professional Growth"],
     date: "2024-11-10",
-    slug: "hydroponics-coding-flow"
+    slug: "student-to-professional-journey"
   }
 ];
 
