@@ -142,7 +142,6 @@ export const education = {
 
 export const categories = [
   "All",
-  "Web Backend & APIs",
-  "Game Development", 
-  "Research & Academic"
+  "Web Development",
+  "Software Development"
 ];
