@@ -24,16 +24,31 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Mock form submission - in real implementation, this would send to backend
-    setTimeout(() => {
+    try {
+      // Using Formspree for static form submission
+      const response = await fetch('https://formspree.io/f/your-form-id', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      });
+      
+      if (response.ok) {
+        setSubmitStatus('success');
+        setFormData({ name: '', email: '', subject: '', message: '' });
+      } else {
+        setSubmitStatus('error');
+      }
+    } catch (error) {
+      setSubmitStatus('error');
+    } finally {
       setIsSubmitting(false);
-      setSubmitStatus('success');
-      setFormData({ name: '', email: '', subject: '', message: '' });
       
       setTimeout(() => {
         setSubmitStatus(null);
-      }, 3000);
-    }, 1000);
+      }, 5000);
+    }
   };
 
   return (
@@ -58,6 +73,12 @@ const Contact = () => {
                 I'm always open to discussing new opportunities, interesting projects, 
                 or just having a chat about technology and development. Feel free to reach out!
               </p>
+              
+              <div className="bg-teal-accent/10 border border-teal-accent/30 rounded-lg p-4 mb-8">
+                <p className="text-teal-accent font-mono text-sm">
+                  💡 <strong>Note:</strong> To use the contact form, replace 'your-form-id' in the code with your actual Formspree form ID.
+                </p>
+              </div>
             </div>
             
             {/* Contact Methods */}
@@ -199,6 +220,14 @@ const Contact = () => {
                 </div>
               )}
               
+              {submitStatus === 'error' && (
+                <div className="p-4 bg-red-500/10 border border-red-500/30 rounded-lg">
+                  <p className="text-red-400 font-mono text-sm">
+                    ✗ Failed to send message. Please try again or contact me directly via email.
+                  </p>
+                </div>
+              )}
+              
               <button
                 type="submit"
                 disabled={isSubmitting}
@@ -216,6 +245,10 @@ const Contact = () => {
                   </>
                 )}
               </button>
+              
+              <p className="text-grey text-xs text-center">
+                Form powered by Formspree - configure your form ID to enable submissions
+              </p>
             </form>
           </div>
         </div>

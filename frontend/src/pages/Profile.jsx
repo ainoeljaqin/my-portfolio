@@ -48,8 +48,14 @@ const ExperienceItem = ({ exp }) => {
 
 const Profile = () => {
   const handleDownloadCV = () => {
-    // Mock CV download - in real implementation, this would download an actual PDF
-    alert('CV Download Feature - Mock Implementation\n\nIn production, this would download:\nCV-Muhammad-Ainul-Yaqin.pdf');
+    // Create a link element to download the static PDF
+    const link = document.createElement('a');
+    link.href = '/assets/CV-Muhammad-Ainul-Yaqin.pdf'; // Static PDF path
+    link.download = 'CV-Muhammad-Ainul-Yaqin.pdf';
+    link.target = '_blank';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
@@ -64,13 +70,22 @@ const Profile = () => {
             Here's a quick overview of my professional journey and qualifications.
           </p>
           
-          <button 
-            onClick={handleDownloadCV}
-            className="inline-flex items-center gap-3 bg-teal-accent text-black px-8 py-4 rounded-full font-mono text-sm uppercase tracking-wider hover:bg-teal-accent/90 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-teal-accent/20"
-          >
-            <Download size={18} />
-            Download CV (PDF)
-          </button>
+          <div className="mb-8">
+            <button 
+              onClick={handleDownloadCV}
+              className="inline-flex items-center gap-3 bg-teal-accent text-black px-8 py-4 rounded-full font-mono text-sm uppercase tracking-wider hover:bg-teal-accent/90 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-teal-accent/20"
+            >
+              <Download size={18} />
+              Download CV (PDF)
+            </button>
+          </div>
+          
+          {/* Note about PDF */}
+          <div className="bg-teal-accent/10 border border-teal-accent/30 rounded-lg p-4 max-w-2xl mx-auto">
+            <p className="text-teal-accent font-mono text-sm">
+              📝 <strong>Note:</strong> Add your CV file to /public/assets/CV-Muhammad-Ainul-Yaqin.pdf for the download to work.
+            </p>
+          </div>
         </div>
         
         <div className="grid lg:grid-cols-3 gap-12">
