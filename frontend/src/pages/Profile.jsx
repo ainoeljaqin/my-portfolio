@@ -119,6 +119,12 @@ const Profile = () => {
               />
               
               <ProfileInfoCard 
+                icon={Mail}
+                label="Phone"
+                value={personalInfo.phone}
+              />
+              
+              <ProfileInfoCard 
                 icon={Github}
                 label="GitHub"
                 value={personalInfo.github}
