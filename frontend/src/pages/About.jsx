@@ -63,6 +63,9 @@ const About = () => {
                   <span className="text-white font-mono">Email:</span> {personalInfo.email}
                 </p>
                 <p className="text-grey">
+                  <span className="text-white font-mono">Phone:</span> {personalInfo.phone}
+                </p>
+                <p className="text-grey">
                   <span className="text-white font-mono">GitHub:</span> {personalInfo.github}
                 </p>
                 <p className="text-grey">
