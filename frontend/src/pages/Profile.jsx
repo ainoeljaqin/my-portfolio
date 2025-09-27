@@ -119,7 +119,7 @@ const Profile = () => {
               />
               
               <ProfileInfoCard 
-                icon={Mail}
+                icon={Phone}
                 label="Phone"
                 value={personalInfo.phone}
               />
