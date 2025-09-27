@@ -109,18 +109,25 @@ export const blogPosts = [
 
 export const experience = [
   {
-    title: "Thesis (2025)",
-    role: "Academic Research",
-    description: "Development of Adaptive Combo Attack System using Deep Reinforcement Learning in ARPG",
-    details: "Developed a mage boss using DRL in Godot for adaptive attack patterns.",
-    period: "2024 - 2025"
+    title: "Fullstack Developer",
+    role: "Adisatya IT Consultant",
+    description: "International project development as full-stack web developer",
+    details: "Responsible for frontend and backend development, API integration, UI/UX design, and ensuring scalability of web applications. Collaborated with cross-functional teams to deliver high-quality solutions.",
+    period: "May 2024 - Present"
   },
   {
-    title: "KKN Project",
-    role: "Web Developer",
-    description: "Cultural & SME Mapping Website",
-    details: "Developed a static mapping website using JSON & Leaflet, deployed on GitHub Pages.",
-    period: "2024"
+    title: "Internship - Fullstack Developer",
+    role: "Adisatya IT Consultant",
+    description: "International project contribution as full-stack web developer intern",
+    details: "Contributed to both frontend and backend development, designed user interfaces, implemented business logic, and maintained application performance during internship period.",
+    period: "Feb 2024 - May 2024"
+  },
+  {
+    title: "Fullstack Web Developer Mentee",
+    role: "Infinite Learning, PT Kinema Systrans Multimedia",
+    description: "Studi Independen program focusing on vocational training",
+    details: "Participated in comprehensive fullstack development training program, developing skills relevant to digital ecosystem demands in Nongsa Digital Park.",
+    period: "Aug 2023 - Dec 2023"
   }
 ];
 
