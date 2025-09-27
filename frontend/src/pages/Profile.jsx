@@ -50,7 +50,7 @@ const Profile = () => {
   const handleDownloadCV = () => {
     // Create a link element to download the actual CV
     const link = document.createElement('a');
-    link.href = '/assets/Muhammad-Ainul-Yaqin-resume.pdf'; // Updated to actual CV filename
+    link.href = './assets/Muhammad-Ainul-Yaqin-resume.pdf';
     link.download = 'Muhammad-Ainul-Yaqin-resume.pdf';
     link.target = '_blank';
     document.body.appendChild(link);
