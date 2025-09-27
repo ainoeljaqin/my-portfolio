@@ -48,10 +48,10 @@ const ExperienceItem = ({ exp }) => {
 
 const Profile = () => {
   const handleDownloadCV = () => {
-    // Create a link element to download the static PDF
+    // Create a link element to download the actual CV
     const link = document.createElement('a');
-    link.href = '/assets/CV-Muhammad-Ainul-Yaqin.pdf'; // Static PDF path
-    link.download = 'CV-Muhammad-Ainul-Yaqin.pdf';
+    link.href = '/assets/Muhammad-Ainul-Yaqin-resume.pdf'; // Updated to actual CV filename
+    link.download = 'Muhammad-Ainul-Yaqin-resume.pdf';
     link.target = '_blank';
     document.body.appendChild(link);
     link.click();
