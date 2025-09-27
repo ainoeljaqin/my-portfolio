@@ -1,5 +1,5 @@
 import React from 'react';
-import { Download, User, MapPin, Mail, Github, Linkedin, GraduationCap } from 'lucide-react';
+import { Download, User, MapPin, Mail, Phone, Github, Linkedin, GraduationCap } from 'lucide-react';
 import { personalInfo, skills, experience, education } from '../data/mockData';
 
 const ProfileInfoCard = ({ icon: Icon, label, value }) => {
