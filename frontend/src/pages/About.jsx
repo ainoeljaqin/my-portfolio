@@ -112,7 +112,11 @@ const About = () => {
               <div className="bg-dark-grey/10 rounded-lg p-6 border border-dark-grey/30">
                 <h3 className="text-xl font-semibold text-white mb-2">{education.degree}</h3>
                 <p className="text-teal-accent font-mono text-sm uppercase tracking-wider mb-2">{education.institution}</p>
-                <p className="text-grey mb-4">Expected Graduation: {education.expectedGraduation}</p>
+                <p className="text-grey mb-2">{education.location}</p>
+                <div className="flex justify-between items-center mb-4">
+                  <p className="text-white">Expected Graduation: {education.expectedGraduation}</p>
+                  <p className="text-teal-accent font-semibold">GPA: {education.gpa}</p>
+                </div>
                 <div>
                   <span className="text-white font-mono text-sm">Relevant Courses:</span>
                   <div className="flex flex-wrap gap-2 mt-2">
