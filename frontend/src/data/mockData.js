@@ -16,10 +16,10 @@ export const personalInfo = {
 };
 
 export const skills = {
-  "Programming Languages": ["Python", "JavaScript", "GDScript"],
-  "Frameworks & Tools": ["Django", "Celery", "Tailwind", "Astro"],
-  "Game Development": ["Godot Engine", "DRL integration", "Joystick systems"],
-  "Other": ["Git", "Linux", "REST API", "Research Writing"]
+  "Programming Languages": ["JavaScript", "PHP", "Java", "Python"],
+  "Web Development": ["FullStack Development", "Frontend", "Backend", "API Integration"],
+  "Specializations": ["Cybersecurity", "Artificial Intelligence", "Software Development"],
+  "Core Competencies": ["Problem Solving", "Critical Thinking", "Team Collaboration"]
 };
 
 export const projects = [
