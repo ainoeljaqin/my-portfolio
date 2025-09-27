@@ -1,5 +1,6 @@
 import React from 'react';
 import { Github, Linkedin, Mail } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { personalInfo } from '../data/mockData';
 
 const Footer = () => {
@@ -19,10 +20,10 @@ const Footer = () => {
           <div>
             <h4 className="text-white font-mono text-sm uppercase tracking-wider mb-3">Navigation</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="/" className="text-grey hover:text-teal-accent transition-colors">Home</a></li>
-              <li><a href="/projects" className="text-grey hover:text-teal-accent transition-colors">Projects</a></li>
-              <li><a href="/about" className="text-grey hover:text-teal-accent transition-colors">About</a></li>
-              <li><a href="/blog" className="text-grey hover:text-teal-accent transition-colors">Blog</a></li>
+              <li><Link to="/" className="text-grey hover:text-teal-accent transition-colors">Home</Link></li>
+              <li><Link to="/projects" className="text-grey hover:text-teal-accent transition-colors">Projects</Link></li>
+              <li><Link to="/about" className="text-grey hover:text-teal-accent transition-colors">About</Link></li>
+              <li><Link to="/blog" className="text-grey hover:text-teal-accent transition-colors">Blog</Link></li>
             </ul>
           </div>
           
