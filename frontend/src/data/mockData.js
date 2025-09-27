@@ -2,15 +2,16 @@
 
 export const personalInfo = {
   name: "Muhammad Ainul Yaqin",
-  title: "Backend Developer • Game Developer • Researcher",
-  tagline: "I build efficient backend systems, intelligent game mechanics, and research-driven solutions.",
-  location: "Kediri, Indonesia",
-  email: "ainul@example.com",
-  github: "github.com/ainul",
-  linkedin: "linkedin.com/in/ainul",
+  title: "FullStack Developer • Cybersecurity • AI Developer",
+  tagline: "I build efficient web applications, secure systems, and AI-powered solutions.",
+  location: "Purwoasri Kediri, Jawa Timur, Indonesia",
+  email: "aanainul110303@gmail.com",
+  phone: "088805403414",
+  github: "github.com/ainoeljaqin",
+  linkedin: "linkedin.com/in/muhammad-ainul-yaqin-36bb88297",
   bio: [
-    "Hi, I'm Ainul — an Informatics Engineering student passionate about backend systems and game development. I love creating efficient architectures and exploring the intersection between AI and gameplay through reinforcement learning.",
-    "Outside of tech, I enjoy simple routines: gardening, caring for my chickens 🐔🌿, and watching anime on weekends. These hobbies help me stay balanced and creative."
+    "Hi, I'm Ainul — an Informatics Engineering student passionate about fullstack web development, cybersecurity, and artificial intelligence. With experience at Adisatya IT Consultant, I specialize in creating scalable web applications and implementing secure, AI-driven solutions.",
+    "I'm currently pursuing my degree at Universitas Nusantara PGRI Kediri with a 3.88 GPA, while actively contributing to the Himaditi student organization and working on innovative projects that bridge technology and real-world applications."
   ]
 };
 
